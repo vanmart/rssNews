@@ -1,0 +1,9 @@
+<h1>News</h1>
+
+<% @feed.entries.each do |article| %>
+    <div class=”col-md-4 article-padding”>
+    <a href=”<%= article[:link] %>”><p><strong><%= article[:title] %></strong></p></a>
+    <p>
+    <%= article[:description] %></p>
+    </div>
+  <% end %>
